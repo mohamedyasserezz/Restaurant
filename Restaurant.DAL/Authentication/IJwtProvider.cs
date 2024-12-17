@@ -2,7 +2,7 @@
 {
     public interface IJwtProvider
     {
-        (string token, int ecpriesIn) GenerateToken(ApplicationUser user);
+        (string token, int ecpriesIn) GenerateToken(Customer user);
         string? ValidateToken(string token);
     }
 }

@@ -10,13 +10,12 @@ namespace Restaurant.DAL.Authentication
     {
         private readonly JwtOptions _jwtSettinges = options.Value;
 
-        public (string token, int ecpriesIn) GenerateToken(ApplicationUser user)
+        public (string token, int ecpriesIn) GenerateToken(Customer user)
         {
             Claim[] claims = [
                 new(JwtRegisteredClaimNames.Sub, user.Id),
                 new(JwtRegisteredClaimNames.Email, user.Email!),
-                new(JwtRegisteredClaimNames.GivenName, user.FirstName),
-                new(JwtRegisteredClaimNames.FamilyName, user.LastName),
+                new(JwtRegisteredClaimNames.GivenName, user.Name),
                 new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
                 ];
             var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettinges.Key));

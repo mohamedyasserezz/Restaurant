@@ -10,7 +10,7 @@ namespace Restaurant.DAL
 {
     public static class DependecyInjuction
     {
-        public static IServiceCollection AddBLLServices(this IServiceCollection services,
+        public static IServiceCollection AddDALServices(this IServiceCollection services,
             IConfiguration configuration)
         {
             var connectionString = configuration.GetConnectionString("DefaultConnection") ??
@@ -19,7 +19,7 @@ namespace Restaurant.DAL
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 
             services
-              .AddIdentity<ApplicationUser, IdentityRole>()
+              .AddIdentity<Customer, IdentityRole>()
               .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddSingleton<IJwtProvider, JwtProvider>();

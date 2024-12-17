@@ -1,0 +1,947 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/pc/ontologies/2024/11/untitled-ontology-10"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/pc/ontologies/2024/11/untitled-ontology-10">
+    <Prefix name="" IRI="http://www.semanticweb.org/pc/ontologies/2024/11/untitled-ontology-10#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AffordableDish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExpensiveDish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighRatedDish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighRatedRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowRatedDish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowRatedRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Menu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMenu"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#preparedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rating"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chef1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chef10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dish1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dish10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dish11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dish12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dish13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dish14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dish2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dish3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dish4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dish5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dish6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dish7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dish8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dish9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Menu1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Menu2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Menu3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reservation1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reservation2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reservation3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reservation4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reservation5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restaurant1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chef2"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AffordableDish"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExpensiveDish"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighRatedDish"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighRatedRestaurant"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowRatedDish"/>
+        <Class IRI="#Dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowRatedRestaurant"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Chef"/>
+        <NamedIndividual IRI="#Chef1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chef"/>
+        <NamedIndividual IRI="#Chef10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dish"/>
+        <NamedIndividual IRI="#Dish1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dish"/>
+        <NamedIndividual IRI="#Dish10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dish"/>
+        <NamedIndividual IRI="#Dish11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dish"/>
+        <NamedIndividual IRI="#Dish12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dish"/>
+        <NamedIndividual IRI="#Dish13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dish"/>
+        <NamedIndividual IRI="#Dish14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dish"/>
+        <NamedIndividual IRI="#Dish2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dish"/>
+        <NamedIndividual IRI="#Dish3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dish"/>
+        <NamedIndividual IRI="#Dish4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dish"/>
+        <NamedIndividual IRI="#Dish5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dish"/>
+        <NamedIndividual IRI="#Dish6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dish"/>
+        <NamedIndividual IRI="#Dish7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dish"/>
+        <NamedIndividual IRI="#Dish8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dish"/>
+        <NamedIndividual IRI="#Dish9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Menu"/>
+        <NamedIndividual IRI="#Menu1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Menu"/>
+        <NamedIndividual IRI="#Menu2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Menu"/>
+        <NamedIndividual IRI="#Menu3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reservation"/>
+        <NamedIndividual IRI="#Reservation1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reservation"/>
+        <NamedIndividual IRI="#Reservation2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reservation"/>
+        <NamedIndividual IRI="#Reservation3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reservation"/>
+        <NamedIndividual IRI="#Reservation4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reservation"/>
+        <NamedIndividual IRI="#Reservation5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restaurant"/>
+        <NamedIndividual IRI="#Restaurant1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chef"/>
+        <NamedIndividual IRI="#chef2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReservation"/>
+        <NamedIndividual IRI="#Customer1"/>
+        <NamedIndividual IRI="#Reservation1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReservation"/>
+        <NamedIndividual IRI="#Customer2"/>
+        <NamedIndividual IRI="#Reservation2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReservation"/>
+        <NamedIndividual IRI="#Customer3"/>
+        <NamedIndividual IRI="#Reservation3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReservation"/>
+        <NamedIndividual IRI="#Customer4"/>
+        <NamedIndividual IRI="#Reservation4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReservation"/>
+        <NamedIndividual IRI="#Customer5"/>
+        <NamedIndividual IRI="#Reservation5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preparedBy"/>
+        <NamedIndividual IRI="#Dish1"/>
+        <NamedIndividual IRI="#Chef10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preparedBy"/>
+        <NamedIndividual IRI="#Dish10"/>
+        <NamedIndividual IRI="#Chef10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preparedBy"/>
+        <NamedIndividual IRI="#Dish11"/>
+        <NamedIndividual IRI="#chef2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preparedBy"/>
+        <NamedIndividual IRI="#Dish12"/>
+        <NamedIndividual IRI="#chef2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preparedBy"/>
+        <NamedIndividual IRI="#Dish13"/>
+        <NamedIndividual IRI="#Chef10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preparedBy"/>
+        <NamedIndividual IRI="#Dish14"/>
+        <NamedIndividual IRI="#Chef10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preparedBy"/>
+        <NamedIndividual IRI="#Dish2"/>
+        <NamedIndividual IRI="#chef2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preparedBy"/>
+        <NamedIndividual IRI="#Dish3"/>
+        <NamedIndividual IRI="#Chef1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preparedBy"/>
+        <NamedIndividual IRI="#Dish4"/>
+        <NamedIndividual IRI="#chef2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preparedBy"/>
+        <NamedIndividual IRI="#Dish5"/>
+        <NamedIndividual IRI="#Chef1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preparedBy"/>
+        <NamedIndividual IRI="#Dish6"/>
+        <NamedIndividual IRI="#Chef1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preparedBy"/>
+        <NamedIndividual IRI="#Dish7"/>
+        <NamedIndividual IRI="#Chef1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preparedBy"/>
+        <NamedIndividual IRI="#Dish8"/>
+        <NamedIndividual IRI="#Chef1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#preparedBy"/>
+        <NamedIndividual IRI="#Dish9"/>
+        <NamedIndividual IRI="#Chef1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Menu1"/>
+        <NamedIndividual IRI="#Dish1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Menu1"/>
+        <NamedIndividual IRI="#Dish10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Menu1"/>
+        <NamedIndividual IRI="#Dish13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Menu1"/>
+        <NamedIndividual IRI="#Dish14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Menu2"/>
+        <NamedIndividual IRI="#Dish11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Menu2"/>
+        <NamedIndividual IRI="#Dish12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Menu2"/>
+        <NamedIndividual IRI="#Dish2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Menu2"/>
+        <NamedIndividual IRI="#Dish4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Menu3"/>
+        <NamedIndividual IRI="#Dish2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Menu3"/>
+        <NamedIndividual IRI="#Dish3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Menu3"/>
+        <NamedIndividual IRI="#Dish5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Menu3"/>
+        <NamedIndividual IRI="#Dish6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Menu3"/>
+        <NamedIndividual IRI="#Dish9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMenu"/>
+        <NamedIndividual IRI="#Restaurant1"/>
+        <NamedIndividual IRI="#Menu1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMenu"/>
+        <NamedIndividual IRI="#Restaurant1"/>
+        <NamedIndividual IRI="#Menu2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMenu"/>
+        <NamedIndividual IRI="#Restaurant1"/>
+        <NamedIndividual IRI="#Menu3"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Chef1"/>
+        <Literal>Gordon Ramsay</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Chef10"/>
+        <Literal>Marco Pierre White</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer1"/>
+        <Literal>John Doe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer10"/>
+        <Literal>Amelia White</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer2"/>
+        <Literal>Jane Smith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer3"/>
+        <Literal>Sam Wilson</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer4"/>
+        <Literal>Olivia Brown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer5"/>
+        <Literal>Emily Davis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer6"/>
+        <Literal>Michael Lee</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer7"/>
+        <Literal>William King</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer8"/>
+        <Literal>Sophia Green</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer9"/>
+        <Literal>Liam Clark</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dish1"/>
+        <Literal>Pasta Carbonara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Dish1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dish1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dish10"/>
+        <Literal>Spaghetti Bolognese</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Dish10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">13.50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dish10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dish11"/>
+        <Literal>Baked salmon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Dish11"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50.00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dish11"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dish12"/>
+        <Literal>Fish stew</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Dish12"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">43.00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dish12"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dish13"/>
+        <Literal>Pasta alla gricia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Dish13"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45.00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dish13"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dish14"/>
+        <Literal>Bruschetta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Dish14"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">70.00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dish14"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dish2"/>
+        <Literal>Grilled Salmon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Dish2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">19.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dish2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dish3"/>
+        <Literal>Butter Chicken</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Dish3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">14.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dish3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dish4"/>
+        <Literal>Sushi Roll</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Dish4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10.50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dish4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dish5"/>
+        <Literal>BBQ Ribs</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Dish5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">21.00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dish5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dish6"/>
+        <Literal>Vegan Salad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Dish6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dish6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dish7"/>
+        <Literal>French Onion Soup</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Dish7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9.50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dish7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dish8"/>
+        <Literal>Bratwurst</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Dish8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">11.00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dish8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dish9"/>
+        <Literal>Taco</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Dish9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Dish9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Menu1"/>
+        <Literal>Italian Specials</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Menu2"/>
+        <Literal>Fish dishes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Menu3"/>
+        <Literal>Most Popular</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Reservation1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-20T19:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Reservation2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-21T18:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Reservation3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-22T20:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Reservation4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-20T18:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#Reservation5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-25T19:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#Restaurant1"/>
+        <Literal>Cairo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Restaurant1"/>
+        <Literal>Chefinho</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Restaurant1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#chef2"/>
+        <Literal>Alain Ducasse</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMenu"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReservation"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#Menu"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#preparedBy"/>
+        <Class IRI="#Dish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMenu"/>
+        <Class IRI="#Menu"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReservation"/>
+        <Class IRI="#Reservation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#Dish"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#preparedBy"/>
+        <Class IRI="#Chef"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDate"/>
+        <Class IRI="#Reservation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#location"/>
+        <Class IRI="#Restaurant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Chef"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Dish"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Reservation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#price"/>
+        <Class IRI="#Dish"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rating"/>
+        <Class IRI="#Dish"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rating"/>
+        <Class IRI="#Restaurant"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#location"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#price"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rating"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>

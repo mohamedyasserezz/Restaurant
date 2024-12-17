@@ -232,7 +232,7 @@ namespace Restaurant.DAL.Persistence.Migrations
 
             modelBuilder.Entity("ApplicationUser", b =>
                 {
-                    b.OwnsMany("Restaurant.DAL.Entites.User.RefreshToken", "RefreshTokens", b1 =>
+                    b.OwnsMany("ApplicationUser.RefreshTokens#Restaurant.DAL.Entites.User.RefreshToken", "RefreshTokens", b1 =>
                         {
                             b1.Property<string>("UserId")
                                 .HasColumnType("nvarchar(450)");
